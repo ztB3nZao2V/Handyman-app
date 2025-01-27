@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handyman Services App Prototype</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-6">
+        <!-- Header -->
+        <div class="bg-blue-500 text-white p-4 rounded-lg mb-6">
+            <h1 class="text-2xl font-bold">Handyman Services</h1>
+            <p>Reliable repairs and maintenance at your fingertips</p>
+        </div>
+
+        <!-- Customer Home Screen -->
+        <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Customer Home Screen</h2>
+            <input type="text" placeholder="What do you need?" class="w-full p-2 border rounded mb-4">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-gray-100 p-4 rounded shadow">Plumbing</div>
+                <div class="bg-gray-100 p-4 rounded shadow">Electrical</div>
+                <div class="bg-gray-100 p-4 rounded shadow">Carpentry</div>
+                <div class="bg-gray-100 p-4 rounded shadow">Assembly</div>
+            </div>
+            <button class="mt-4 w-full bg-blue-500 text-white py-2 rounded">Book Now</button>
+        </div>
+
+        <!-- Booking Screen -->
+        <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Booking Screen</h2>
+            <div class="mb-4">
+                <label class="block font-bold mb-1">Service Details</label>
+                <textarea class="w-full p-2 border rounded" placeholder="Describe the task..."></textarea>
+            </div>
+            <div class="mb-4">
+                <label class="block font-bold mb-1">Location</label>
+                <input type="text" class="w-full p-2 border rounded" placeholder="Enter your address">
+            </div>
+            <div class="mb-4">
+                <label class="block font-bold mb-1">Date & Time</label>
+                <input type="datetime-local" class="w-full p-2 border rounded">
+            </div>
+            <button class="w-full bg-blue-500 text-white py-2 rounded">Confirm Booking</button>
+        </div>
+
+        <!-- Handyman Profile Screen -->
+        <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Handyman Profile</h2>
+            <div class="flex items-center mb-4">
+                <img src="https://via.placeholder.com/80" class="rounded-full mr-4" alt="Profile Picture">
+                <div>
+                    <h3 class="text-lg font-bold">John Doe</h3>
+                    <p>Plumbing, Electrical</p>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block font-bold mb-1">Ratings & Reviews</label>
+                <div class="bg-gray-100 p-2 rounded">⭐️⭐️⭐️⭐️⭐️</div>
+            </div>
+            <button class="w-full bg-blue-500 text-white py-2 rounded">Book Now</button>
+        </div>
+
+        <!-- Handyman Dashboard -->
+        <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Handyman Dashboard</h2>
+            <div class="mb-4">
+                <label class="block font-bold mb-1">Upcoming Bookings</label>
+                <ul class="list-disc pl-4">
+                    <li>Fix leaky faucet - Jan 28, 2 PM</li>
+                    <li>Assemble furniture - Jan 29, 10 AM</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <label class="block font-bold mb-1">Earnings Overview</label>
+                <div class="bg-gray-100 p-2 rounded">Total Earnings: $850</div>
+            </div>
+            <button class="w-full bg-blue-500 text-white py-2 rounded">Manage Profile</button>
+        </div>
+    </div>
+</body>
+</html>
